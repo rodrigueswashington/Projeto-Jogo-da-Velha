@@ -9,29 +9,31 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Jogo da Velha</h1>
-    <div id="players">
-        <div class="inputs">
-            <strong>X</strong> <input type="text" name="player1" id="player1" placeholder="Nome do jogador 1">
+    <main>
+        <div id="players">
+            <h1>Jogo da Velha</h1>
+            <div class="inputs">
+                <strong>X</strong> <input type="text" name="player1" id="player1" placeholder="Nome do jogador 1">
+            </div>
+            <div class="inputs">
+                <strong>O</strong> <input type="text" name="player2" id="player2" placeholder="Nome do jogador 2">
+            </div>
+            <button id="start">Começar!</button>
         </div>
-        <div class="inputs">
-            <strong>O</strong> <input type="text" name="player2" id="player2" placeholder="Nome do jogador 2">
+        <div id="divGame">
+            <h2>Vez de: <span id="turnPlayer"></span></h2>
+            <section id="gameBoard">
+                <span class="cursor-pointer" data-region="0.0"></span>
+                <span class="cursor-pointer" data-region="0.1"></span>
+                <span class="cursor-pointer" data-region="0.2"></span>
+                <span class="cursor-pointer" data-region="1.0"></span>
+                <span class="cursor-pointer" data-region="1.1"></span>
+                <span class="cursor-pointer" data-region="1.2"></span>
+                <span class="cursor-pointer" data-region="2.0"></span>
+                <span class="cursor-pointer" data-region="2.1"></span>
+                <span class="cursor-pointer" data-region="2.2"></span>
+            </section>
         </div>
-        <button id="start">Começar!</button>
-    </div>
-    <div id="divGame">
-        <h2>Vez de: <span id="turnPlayer"></span></h2>
-        <section id="gameBoard">
-            <span class="cursor-pointer" data-region="0.0"></span>
-            <span class="cursor-pointer" data-region="0.1"></span>
-            <span class="cursor-pointer" data-region="0.2"></span>
-            <span class="cursor-pointer" data-region="1.0"></span>
-            <span class="cursor-pointer" data-region="1.1"></span>
-            <span class="cursor-pointer" data-region="1.2"></span>
-            <span class="cursor-pointer" data-region="2.0"></span>
-            <span class="cursor-pointer" data-region="2.1"></span>
-            <span class="cursor-pointer" data-region="2.2"></span>
-        </section>
-    </div>
+    </main>
 </body>
 </html>
